@@ -6,76 +6,91 @@
   box-sizing: border-box;
 }
 
-/* music cds */
 #cdApp {
   background-color: var(--colourBgWhite);
   padding: 1rem;
   border-radius: 0.5rem;
   margin-top: 2rem;
-}
+  font-family: var(--fontMain);
 
-/* formular */
-#cdForm {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 0.5rem 1rem;
-  margin-bottom: 1rem;
-}
+  h2 {
+    font-family: var(--fontTitle);
+    background-color: var(--colourBgBlue);
+    color: var(--colourBgWhite);
+    padding: 0.8rem 1rem;
+    border-radius: 0.3rem 0.3rem 0 0;
+    margin-bottom: 1rem;
+  }
 
-#cdForm label {
-  font-weight: bold;
-  align-self: center;
-}
+  /* Formular */
+  #cdForm {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: 0.5rem 1rem;
+    margin-bottom: 1rem;
 
-#cdForm input {
-  padding: 0.3rem;
-  border: 1px solid var(--colourBgGray);
-  border-radius: 0.3rem;
-}
+    label {
+      font-weight: bold;
+      align-self: center;
+    }
 
-#cdForm button {
-  grid-column: span 2;
-  padding: 0.5rem 1rem;
-  background-color: var(--colourBgBlue);
-  color: white;
-  border: none;
-  border-radius: 0.3rem;
-  cursor: pointer;
-}
+    input {
+      padding: 0.4rem;
+      border: 0.1rem solid var(--colourBgGray);
+      border-radius: 0.3rem;
+    }
 
-#cdForm button:hover {
-  background-color: var(--colourBgRed);
-}
+    button {
+      grid-column: span 2;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--colourBgWhite);
+      color: var(--colourBgBlue);
+      border: 0.1rem solid var(--colourBgGray);
+      border-radius: 0.3rem;
+      font-weight: bold;
+      cursor: pointer;
 
-/* Tabel */
-#cdTable {
-  width: 100%;
-  border-collapse: collapse;
-}
+      &:hover {
+        background-color: var(--colourBgBlue);
+        color: var(--colourBgWhite);
+      }
+    }
+  }
 
-#cdTable th {
-  background-color: var(--colourBgBlue);
-  color: white;
-  text-align: left;
-  padding: 0.5rem;
-}
+  /* Tabel */
+  #cdTable {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0.1rem solid var(--colourBgBlue);
 
-#cdTable td {
-  padding: 0.5rem;
-  border-bottom: 1px solid var(--colourBgGray);
-}
+    th {
+      background-color: var(--colourBgBlue);
+      color: var(--colourBgWhite);
+      text-align: left;
+      padding: 0.5rem;
+      font-family: var(--fontTxt);
+      border: 0.1rem solid var(--colourBgBlue);
+    }
 
-#cdTable td:last-child {
-  text-align: center;
-}
+    td {
+      padding: 0.5rem;
+      border: 0.1rem solid var(--colourBgBlue);
+    }
 
-/* delete */
-.delete {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-}
-.delete:hover {
-  color: var(--colourBgRed);
+    td:last-child {
+      text-align: center;
+    }
+  }
+
+  /* Delete knap */
+  .delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+
+    &:hover {
+      color: var(--colourBgRed);
+    }
+  }
 }
