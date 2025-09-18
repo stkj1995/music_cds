@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-header { 
+h1 { 
   font-family: var(--fontTitle); 
   background-color: var(--colourBgBlue); 
   color: var(--colourBgWhite) 
@@ -19,7 +19,7 @@ header {
   margin-top: 2rem;
   font-family: var(--fontMain);
 
-  /* Formular */
+  /* formular */
   #cdForm {
     display: grid;
     grid-template-columns: 6rem 1fr;
@@ -54,7 +54,7 @@ header {
     }
   }
 
-  /* Tabel */
+  /* rækker */
   #cdTable {
     width: 100%;
     border-collapse: collapse;
@@ -79,7 +79,7 @@ header {
     }
   }
 
-  /* Delete knap */
+  /* knap */
   .delete {
     background: none;
     border: none;
