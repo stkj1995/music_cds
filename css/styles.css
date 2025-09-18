@@ -6,21 +6,18 @@
   box-sizing: border-box;
 }
 
+header { 
+  font-family: var(--fontTitle); 
+  background-color: var(--colourBgBlue); 
+  color: var(--colourBgWhite) 
+}
+
 #cdApp {
   background-color: var(--colourBgWhite);
   padding: 1rem;
   border-radius: 0.5rem;
   margin-top: 2rem;
   font-family: var(--fontMain);
-
-  h2 {
-    font-family: var(--fontTitle);
-    background-color: var(--colourBgBlue);
-    color: var(--colourBgWhite);
-    padding: 0.8rem 1rem;
-    border-radius: 0.3rem 0.3rem 0 0;
-    margin-bottom: 1rem;
-  }
 
   /* Formular */
   #cdForm {
